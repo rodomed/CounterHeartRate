@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#title {
+	color: green;
+   margin: 60px;
+}
+
+body {
+   font-family: Arial, sans-serif;
+}
+
+body > p {
+   margin: 0 120px 25px; 
+}
+
+
+/* .table {                                 !! НЕ ПУТАТЬ КЛАСС .TABLE  И  ТЭГ TABLE  !!
+   display: table;            он,оказывается, не нужен, работает без прописи этого класса!!
+} */
+
+.tablerow {
+   display: table-row;     
+}
+
+.tablecell {
+   display: table-cell; 
+   border: 1px solid white;
+   width: 74%; /*ширина как-то автоматически проставляется. Эта пропись для верхней левой ячейки, а потом автомат*/  
+}
+
+.th {
+   text-align: center;
+   vertical-align: middle;
+
+}
+
+.container {
+   width: 100%;
+   margin: auto;
+   background-color: white;
+}
+
+form {
+   width: 60%;
+   margin: auto;
+   display: table;
+}
+
+
+
+form .tablecell {
+   color: white;
+   background-color: rgb(128, 195, 213);   
+} 
+
+form h3 {
+   text-align: right;
+   margin-right: 10px;
+   margin-top: 15px;
+}
+
+form p {
+   text-align: right; 
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+  
+   
+}
+
+input {
+   font-size: 26px;
+}
+
+input[type="button"] {
+   width: 94%;
+   cursor: pointer;
+}
+
+form .tablerow-3 .tablecell {
+   border-top: 6px solid #fefefe;
+   border-bottom: 12px solid #fefefe;
+   background-color: #fefefe;
+}
+
+table.shadow {
+   width: 60%;
+   margin: 3px auto 50px;
+   box-shadow: 0 0 2px gray;
+}
+
+table.shadow th {
+   background-color: #f7f7f7;;
+   color: black;
+   font-size: 14px;
+   line-height: 25px;
+   font-weight: 200;
+   padding: 15px 20px;
+}
+
+table.shadow th:first-child {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+tbody td, td[colspan="2"] {
+   text-align: center;
+}
+
+table h3 {
+   text-align: left;
+   margin: 15px 10px;
+}
+
+table p {
+   text-align: left;
+   font-size: 16px;
+   line-height: 20px;
+   padding: 0px 10px 15px;
+}
+
+table.shadow tr:nth-child(1) {
+   background-color: #EEEEEE;
+}
+
+table.shadow tr:nth-child(2) {
+   background-color: #FFC6DE;
+}
+
+table.shadow tr:nth-child(3) {
+   background-color: #E8CCB1;
+}
+
+table.shadow tr:nth-child(4) {
+   background-color: #FFFCC4;
+}
+
+table.shadow tr:nth-child(5) {
+   background-color: #B2E8C1;
+}
+
+table.shadow tr:nth-child(6) {
+   background-color: #C4E5FF;
+}
+
+/* .width-60 {
+   width: 60%;
+} */
+
+
+  

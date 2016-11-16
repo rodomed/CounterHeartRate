@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Сердечный калькулятор</title>
+   <!-- <link rel="stylesheet" href="bootstrap.css"> -->
+   <link rel="stylesheet" href="counter_heart.css">
+   <!-- <link rel="stylesheet" href="colors.css"> -->
+   <!-- Latest compiled and minified CSS -->
+   <!--<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
+
+<!-- Optional theme -->
+<!--
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"> 
+-->
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>!-->
+    <!--<script src="http://code.jquery.com/jquery-2.2.3.js"></script>-->
+    
+    <meta charset="UTF-8">
+</head>
+<body>   
+   <h1 id="title">Сердечный калькулятор</h1>
+
+   <p class='text-right'>Введите свои данные</p>
+   
+   <div class="container">
+
+   <form>
+   
+      <div class="tablerow" id="">
+
+         <div class="tablecell" >
+            <h3>Ваш пульс в покое:</h3>
+            <p>Определяется лёжа сразу после пробуждения.</p>
+         </div>
+
+         <div class="tablecell th backgrgreen" >
+           <input type="text" id="pulse" size="3" maxlength="3" required="" autocomplete="off"> 
+         </div>
+
+      </div>
+
+      <div class="tablerow">
+         <div class="tablecell">
+            <h3>Ваш возраст (лет):</h3>
+            <p>Кликните по кнопочке. Результаты смотрите в таблице ниже</p>
+         </div>
+         <div id="id" class="tablecell th">
+            <input type="text" id="age" size="3" maxlength="3" required="" autocomplete="off">
+         </div>
+      </div>
+
+      <div class="tablerow tablerow-3">
+         <div class="tablecell"> 
+         </div>
+         <div class="tablecell th"> 
+               <input type="button" id="click" value="Рассчитать">
+         </div>
+      </div> 
+
+   </form>
+   
+   <table class="shadow">
+
+      <thead>
+         <tr>
+            <th class="width-60">зоны нагрузки</th>
+            <th>по формуле "220 - возраст"<br><a href="#">подробнее</a></th>
+            <th>по уточненной формуле<br><a href="#">подробнее</a></th>
+         </tr>
+      </thead>
+
+      <tfoot>
+         <tr>
+            <td>
+               <h3>Ваш пульс покоя</h3>
+            </td>
+            <td id="pulse_copy" colspan="2"></td>
+         </tr> 
+      </tfoot> 
+         
+      <tbody>
+         <tr>
+            <td>
+               <h3>Максимально допустимый пульс</h3>
+               <p>Достигать этого значения пульса и находиться в этой зоне продолжительное время вредно для здоровья.Если Вы не профессиональный спортсмен, эта зона не для Вас.</p>
+            </td>
+            <td id="age100"></td>
+            <td id="formula100"></td>
+         </tr>
+
+         <tr>
+            <td>
+               <h3>Максимальная нагрузка</h3>
+               <p>Не стоит достигать этих значений пульса на тренировках. Исключение - подготовка к соревнованиям.</p>
+            </td>
+            <td id="age90100"></td>
+            <td id="formula90100"></td>
+         </tr>
+
+         <tr>
+            <td>
+               <h3>Анаэробная зона</h3>
+               <p>Такие показания пульса должны быть сразу после выполнения силовых упражнений или спринта. Если уровень пульса выше, снижайте нагрузку</p>     
+            </td>
+            <td id="age8090"></td>
+            <td id="formula8090"></td>
+         </tr>
+
+         <tr>
+            <td>
+               <h3>Аэробная зона</h3>
+               <p>На таком пульсе развивают ударный объём сердца и аэробную выносливость</p>   
+            </td>
+            <td id="age7080"></td>
+            <td id="formula7080"></td>
+         </tr>
+
+         <tr>
+            <td>
+               <h3>Начало жиросжигающей зоны</h3>
+               <p>При таком пульсе начинается усиленное сжигание калорий<br>
+                  <a href="#"> На каком пульсе надо тренироваться, чтобы похудеть?</a><br>
+                  <a href="#"> Сколько калорий нужно тратить за 1 час?</a><br>
+                  <a href="#"> Сколько калорий надо в день?</a>
+               </p>   
+            </td>
+            <td id="age6070"></td>
+            <td id="formula6070"></td>
+         </tr>
+
+         <tr>
+            <td>
+                <h3>Зона легкой активности</h3>
+            <p>Используется для разминки или на зарядке</p>  
+            </td>
+            <td id="age5060"></td>
+            <td id="formula5060"></td>
+         </tr>
+      </tbody>
+
+         
+     
+   </table>
+   </div>   
+   <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+   <!--<script src="counter_heart.js"></script>-->
+   <!--<script src="mylib.js"></script>-->
+   <script src="counter_heart(2).js"></script>
+    
+    
+  
+</body>
+</html>
+    
